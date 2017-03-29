@@ -1,0 +1,89 @@
+// best case - in order. O(n)
+// worst case - reversed. O(n^2)
+// Average case - O(n^2)
+#include <fstream>
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int insertSort(int a[], int size)
+{
+	int steps = 0;
+
+	for (int i = 1; i < size; i++)
+	{	
+		steps++;
+		int next = a[i];
+		// find insertion location
+		// move all larger elements up
+		int j = i;
+		while (j > 0 && a[j-1] > next)
+		{
+			steps++;
+			a[j] = a[j-1];
+			j--;
+		}
+		// insert element
+		a[j] = next;
+	}
+
+	cout << "Sorted version: " << endl;
+
+	for (int k = 0; k < size; k++)
+	cout << a[k] << endl;
+
+	return steps;
+}
+
+int main()
+{
+	// 1. Test unsorted (random)
+	cout << "Testing insertionSort: Numbers in Random Order." << endl;
+	ifstream read("randomorder");
+	int i = 0;
+	int n;
+	int toRandomize[25];
+	while (read>>n)
+	{
+		toRandomize[i] = n;
+		cout << n << endl;
+		i++;
+	}
+	 cout << endl << "Steps required: " << insertSort(toRandomize, 25);	
+
+
+
+	// 2. Test reverse sorted
+	cout << endl << "Testing insertionSort: Numbers sorted in reverse." << endl;
+	ifstream read1("reversesorted");
+	i = 0;
+	n = 0;
+	int toReverse[25];
+	while (read1>>n)
+	{
+		toReverse[i] = n;
+		cout << n << endl;
+		i++;
+	}
+
+	cout << endl << "Steps required: " << insertSort(toReverse, 25);
+
+	// 3. Test already sorted
+	cout << endl << "Testing selection sort: Numbers already in Order." << endl;
+	ifstream read2("sortedorder");
+	i = 0;
+	int toSorted[25];
+	while (read2>>n)
+	{
+		toSorted[i] = n;
+		cout << n << endl;
+		i++;
+	}
+
+	cout << endl << "Steps required: " << insertSort(toSorted, 25);	
+
+
+
+
+	return 0;
+}

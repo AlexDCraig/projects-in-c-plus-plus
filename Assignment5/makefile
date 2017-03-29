@@ -1,0 +1,2 @@
+CardGame: Deck.h Deck.cpp BlueMen.h BlueMen.cpp Hydra.h Hydra.cpp ReptilePeople.h ReptilePeople.cpp Human.h Human.cpp Gollum.h Gollum.cpp Barbarian.h Barbarian.cpp Requests.h RequestQueue.h RequestQueue.cpp Hand.cpp Hand.h Game.h Game.cpp DeckStack.h DeckStack.cpp Card.h Player.h Player.cpp play_game.cpp
+	g++ Deck.cpp DeckStack.cpp Hand.cpp Game.cpp RequestQueue.cpp Player.cpp Gollum.cpp Barbarian.cpp ReptilePeople.cpp BlueMen.cpp Hydra.cpp Human.cpp play_game.cpp -o CardGame
