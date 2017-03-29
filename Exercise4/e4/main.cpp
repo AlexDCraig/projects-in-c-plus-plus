@@ -1,10 +1,10 @@
-#include "Creature.h"
-#include "BlueMen.h"
-#include "Barbarian.h"
-#include "Gollum.h"
-#include "Hydra.h"
-#include "ReptilePeople.h"
-#include "Player.h"
+#include "Creat.h"
+#include "Blue.h"
+#include "Barb.h"
+#include "Goll.h"
+#include "Hy.h"
+#include "RepPpl.h"
+#include "Play.h"
 #include "StandingsStack.h"
 #include <string>
 #include <iostream>

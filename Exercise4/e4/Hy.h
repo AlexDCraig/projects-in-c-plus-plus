@@ -1,25 +1,29 @@
-/* Program Filename: ReptilePeople.h
+/* Program Filename: Hydra.h
  * Author: Alex Hoffer
  * Date: 10/31/2015
- * Description: Skeleton for Reptile People class.
+ * Description: Skeleton for Hydra class.
  */
 
-#ifndef REPTILEPEOPLE_H
-#define REPTILEPEOPLE_H
+#ifndef HY_H
+#define HY_H
 
-#include "Creature.h"
+#include "Creat.h"
 
-class ReptilePeople : public Creature
+class Hydra : public Creature
 {
+private:
+	bool specialAttack;
 protected:
 	static bool hasPlayed;
 	int timesKilled;
 	int timesBeenKilled;
 public:
-	ReptilePeople();
- 	virtual int calculateAttack();
-	virtual int regenHealth();
+	Hydra();
+	virtual int calculateAttack();
 	virtual int calculateDefense();
+	virtual int regenHealth();
+	void headSevered();
+	bool getSpecialAttack();
 	virtual bool getHasPlayed();
 	virtual void incrementTimesKilled();
 	virtual void incrementTimesBeenKilled();

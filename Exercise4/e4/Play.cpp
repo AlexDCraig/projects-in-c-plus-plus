@@ -1,8 +1,8 @@
 // Implementation of the Player class. This is the most complex class in the program and uses multiple other classes.
 
-#include "Player.h"
-#include "Creature.h"
-#include "LineupQueue.h"
+#include "Play.h"
+#include "Creat.h"
+#include "LineQueue.h"
 #include <iostream>
 #include <time.h>
 #include <string>

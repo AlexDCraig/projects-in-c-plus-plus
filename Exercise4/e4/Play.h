@@ -4,16 +4,16 @@
  * battle function to determine the winners and losers in a tournament
  */
 
-#ifndef PLAYER_H
-#define PLAYER_H
+#ifndef PLAY_H
+#define PLAY_H
 
-#include "Creature.h"
-#include "BlueMen.h"
-#include "Barbarian.h"
+#include "Creat.h"
+#include "Blue.h"
+#include "Barb.h"
 #include "Gollum.h"
 #include "Hydra.h"
 #include "ReptilePeople.h"
-#include "LineupQueue.h"
+#include "LineQueue.h"
 #include "StandingsStack.h"
 #include <string>
 #include <iostream>

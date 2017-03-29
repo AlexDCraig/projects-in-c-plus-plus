@@ -8,7 +8,7 @@
 #include <string>
 #include <cstdlib>
 #include <time.h>
-#include "ReptilePeople.h"
+#include "RepPpl.h"
 using namespace std;
 
 ReptilePeople::ReptilePeople()

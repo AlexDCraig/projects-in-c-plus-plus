@@ -1,6 +1,6 @@
-#include "LineupQueue.h"
-#include "Player.h"
-#include "Creature.h"
+#include "LineQueue.h"
+#include "Play.h"
+#include "Creat.h"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>

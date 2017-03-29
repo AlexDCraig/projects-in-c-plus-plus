@@ -5,10 +5,10 @@
  * storage procedures.
  */
 
-#ifndef LINEUPQUEUE_H
-#define LINEUPQUEUE_H
+#ifndef LINEQUEUE_H
+#define LINEQUEUE_H
 
-#include "Creature.h"
+#include "Creat.h"
 #include <iostream>
 using namespace std;
 
